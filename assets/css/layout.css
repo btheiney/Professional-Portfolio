@@ -1,0 +1,24 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: grid;
+    grid-template-areas: "hero";
+}
+
+nav {
+    margin: 30px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+}

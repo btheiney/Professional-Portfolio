@@ -1,0 +1,76 @@
+* {
+    font-family: 'Public Sans', sans-serif;
+}
+
+a, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li:hover {
+    transform: scale(1.1); 
+}
+
+header {
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    height: 65vh;
+    max-height: 600px;
+}
+
+.name {
+    margin-top: 20px;
+    margin-left: 75px;
+    width: 30%;
+    color: white;
+    font-size: 28px;
+}
+
+.navigation {
+    font-size: 18px;
+}
+
+.navigation li {
+    margin-top: 20px;
+    display: inline-block;
+    margin-right: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.github {
+    border: 2px solid #5E5DF0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    font-size: 18px;
+    padding: 8px 18px;
+    margin-top: -10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.github:hover {
+    background: #5E5DF0;
+}
+
+.linkedin {
+    border: 2px solid #397ae3;
+    border-radius: 999px;
+    box-shadow: #397ae3 10px 10px 20px -10px;
+    font-size: 18px;
+    padding: 8px 18px;
+    margin-top: -10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.linkedin:hover {
+    background: #397ae3;
+}
