@@ -36,6 +36,11 @@ header {
     align-items: center;
 }
 
+.about-description {
+    display: flex;
+    flex-direction: column;
+}
+
 .nav-links li {
     display: inline-block;
     margin-right: 30px;
