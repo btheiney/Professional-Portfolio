@@ -5,8 +5,16 @@
     color: #eee;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 header {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     padding: 35px 10%;
