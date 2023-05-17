@@ -15,8 +15,11 @@
 
 * {
     font-family: 'Inter', sans-serif;
+    filter: saturate(120%);
+}
 
-
+img {
+    filter: saturate(100%);
 }
 
 a {
@@ -59,6 +62,16 @@ body {
     width: 45%;
 }
 
+@media screen and (max-width: 1000px) {
+    .about-details {
+        margin-top: 10px;
+        width: 90%;
+    }
+    .headshot {
+        margin-bottom: 20px;
+    }
+}
+
 .headshot {
     width: 200px;
     height: 200px;
@@ -76,7 +89,6 @@ body {
 .email {
     margin-top: 20px;
     margin-bottom: 5px;
-    opacity: 0.5;
 }
 
 .about-socials {
@@ -134,5 +146,15 @@ body {
 
 .highlighted a:hover {
     transform: scale(1.2);
+}
+
+.contact-title {
+    font-size: 32px;
+    font-weight: 1000;
+    margin-bottom: 10px;
+}
+
+.input {
+    min-width: 100%;
 }
 
