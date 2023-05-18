@@ -48,16 +48,30 @@ body {
     font-weight: 1000;
 }
 
+@media screen and (max-width: 800px) {
+    .about-title {
+        font-size: 36px;
+        text-align: center;
+    }
+}
+
 .about-sub {
     font-size: 24px;
     opacity: 0.5;
+}
+
+@media screen and (max-width: 800px) {
+    .about-sub {
+        font-size: 20px;
+        text-align: center;
+    }
 }
 
 .about-details {
     margin-top: 20px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
     .about {
         margin-top: 10px;
         margin-left: 5vw;
@@ -103,7 +117,8 @@ body {
 }
 
 .section-title {
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .social-icon {
@@ -154,5 +169,20 @@ body {
 
 .input {
     min-width: 100%;
+}
+
+.project-item {
+    margin-top: 40px;
+}
+
+.project-image {
+    height: 130px;
+    width: 130px;
+    filter: saturate(.5) !important;
+}
+
+.project-tags li {
+    display: inline-block;
+    margin-right: 10px;
 }
 
