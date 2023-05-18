@@ -101,11 +101,6 @@ header {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 5%;
-    
-    /* Temp styling */
-    padding: 15px;
-    border: 2px solid var(--primary-color);
-    border-radius: 15px;
 }
 
 @media screen and (max-width: 800px) {
