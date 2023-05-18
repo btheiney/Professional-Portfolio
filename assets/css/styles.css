@@ -18,10 +18,6 @@
     filter: saturate(120%);
 }
 
-img {
-    filter: saturate(100%);
-}
-
 a {
     text-decoration: none;
 }
@@ -78,6 +74,7 @@ body {
     border-radius: 999px;
     margin-right: 25px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    filter: saturate(.5) ! important;
 }
 
 .about-details p {
@@ -110,8 +107,8 @@ body {
 }
 
 .social-icon {
-    height: 32px;
-    width: 32px;
+    height: 24px;
+    width: 24px;
     border-radius: 999px;
 }
 
@@ -126,7 +123,7 @@ body {
     border: 2px solid var(--github-color);
     border-radius: 999px;
     box-shadow: var(--github-color) 10px 10px 20px -10px;
-    padding: 8px 18px;
+    padding: 6px 14px;
 }
 
 .github:hover {
@@ -137,15 +134,16 @@ body {
     border: 2px solid var(--linkedin-color);
     border-radius: 999px;
     box-shadow: var(--linkedin-color) 10px 10px 20px -10px;
-    padding: 8px 18px;
+    padding: 6px 14px;
 }
 
 .linkedin:hover {
     background: var(--linkedin-color);
 }
 
-.highlighted a:hover {
-    transform: scale(1.2);
+.highlighted:hover {
+    background-color: var(--linkedin-color);
+    transition: background-color 800ms linear;
 }
 
 .contact-title {
