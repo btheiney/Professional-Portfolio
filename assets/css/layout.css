@@ -8,16 +8,14 @@
 .container {
     display: flex;
     flex-direction: column;
-    flex-flow: column wrap;
 }
 
 header {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 35px 10%;
+    padding: 35px 25px;
 }
 
 .about {
@@ -85,13 +83,26 @@ header {
 
 /* Media Query for Small screens */
 @media screen and (max-width: 900px) {
+    header  {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    .nav-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
     .headshot {
         margin-bottom: 20px;
     }
+    .about {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
     .about-details {
         flex-direction: column;
-        margin-left: 5%;
-        margin-right: 5%;
     }
     .projects {
         flex-direction: column;
@@ -103,13 +114,60 @@ header {
         gap: 20px;
         align-items: center;
     }
+    .project-details {
+        align-items: center;
+    }
+    .about-socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Media Query for Medium screens */
+@media (min-width: 900px) {
+    .about {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    .projects {
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
 
 /* Media Query for Large screens */
-@media (min-width: 1281px) {
-    .about-details {
-        margin-left: 18%;
-        margin-right: 18%;
+@media (min-width: 1200px) {
+    .about {
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+    .projects {
+        flex-direction: column;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+/* Media Query for Extra Large screens */
+@media (min-width: 1800px) {
+    .about {
+        margin-right: 25%;
+        margin-left: 25%;
+    }
+    .projects {
+        flex-direction: column;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+/* Media Query for Even More Extra Large screens */
+@media (min-width: 2200px) {
+    .about {
+        margin-right: 30%;
+        margin-left: 30%;
     }
     .projects {
         flex-direction: column;
