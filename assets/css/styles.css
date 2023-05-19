@@ -1,20 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 :root {
-    --primary-color: #005792;
+    --primary-color: #0072b1;
     --linkedin-color: #0072b1;
     --github-color: #6e5494;
 }
 
-/* blinking effect */
-@keyframes blinker {
+.typewriter h1 {
+    overflow: hidden;
+    border-right: 4px solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation:
+        typing 2.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
     50% {
-      opacity: 0;
+        border-color: white;
     }
 }
 
 * {
     font-family: 'Inter', sans-serif;
+    line-height: 1.5;
     filter: saturate(120%);
 }
 
@@ -58,28 +86,10 @@ body {
 .about-sub {
     font-size: 24px;
     opacity: 0.5;
+    margin-top: -5px;
 }
-
-@media screen and (max-width: 800px) {
-    .about-sub {
-        font-size: 20px;
-        text-align: center;
-    }
-}
-
 .about-details {
     margin-top: 20px;
-}
-
-@media screen and (max-width: 800px) {
-    .about {
-        margin-top: 10px;
-        margin-left: 5vw;
-        margin-right: 5vw;
-    }
-    .headshot {
-        margin-bottom: 20px;
-    }
 }
 
 .headshot {
@@ -117,7 +127,7 @@ body {
 }
 
 .section-title {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 200;
 }
 
@@ -161,12 +171,6 @@ body {
     transition: background-color 800ms linear;
 }
 
-.contact-title {
-    font-size: 32px;
-    font-weight: 1000;
-    margin-bottom: 10px;
-}
-
 .input {
     min-width: 100%;
 }
@@ -185,11 +189,38 @@ body {
 .project-image {
     height: 180px;
     width: 180px;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
     filter: saturate(.5) !important; /* Reduce saturation on image */
+}
+
+.project-title {
+    font-size: 18px;
 }
 
 .project-tags li {
     display: inline-block;
+    font-size: 12px;
     margin-right: 10px;
+    background-color: rgba(0, 114, 177, 0.1);
+    border: 2px solid var(--primary-color);
+    padding: 4px 10px;
+    border-radius: 999px;
+
+}
+
+@media screen and (max-width: 800px) {
+    .about {
+        margin-top: 10px;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .headshot {
+        margin-bottom: 20px;
+    }
+    .about-sub {
+        font-size: 20px;
+        text-align: center;
+    }
 }
 
