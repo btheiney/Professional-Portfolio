@@ -19,14 +19,14 @@ header {
 }
 
 .about {
-    margin-top: 5%;
+    margin-top: 8%;
     margin-left: 20%;
     margin-right: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5%;
+    margin-bottom: 8%;
 }
 
 .about-details {
@@ -52,7 +52,7 @@ header {
 }
 
 .experience {
-    margin-top: 5%;
+    margin-top: 8%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,7 +88,7 @@ header {
 }
 
 .projects {
-    margin-top: 5%;
+    margin-top: 8%;
     margin-left: 15%;
     margin-right: 15%;
     display: flex;
