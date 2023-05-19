@@ -85,9 +85,10 @@ body {
 
 .about-sub {
     font-size: 24px;
-    opacity: 0.5;
     margin-top: -5px;
+    color: rgb(148, 163, 184, 1);
 }
+
 .about-details {
     margin-top: 20px;
 }
@@ -127,8 +128,9 @@ body {
 }
 
 .section-title {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 200;
+    color: rgb(148, 163, 184, 1);
 }
 
 .social-icon {
@@ -175,6 +177,12 @@ body {
     min-width: 100%;
 }
 
+.experience-sub {
+    font-size: 14px;
+    margin-top: -16px;
+    color: rgb(148, 163, 184, 1);
+}
+
 .project-item {
     margin-top: 15px;
     padding: 20px;
@@ -207,6 +215,13 @@ body {
     padding: 4px 10px;
     border-radius: 999px;
 
+}
+
+.experience-item {
+    margin-top: 15px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 800px) {
