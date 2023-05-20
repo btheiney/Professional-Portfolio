@@ -220,6 +220,20 @@ body {
     border-radius: 10px;
 }
 
+footer p {
+    font-size: 14px;
+    color: rgb(148, 163, 184, 1);
+}
+
+footer a {
+    font-size: 14px;
+    color: rgb(148, 163, 184, 1);
+}
+
+footer li:hover {
+    transform: scale(1.1);
+}
+
 @media screen and (max-width: 800px) {
     .about-title {
         font-size: 32px;

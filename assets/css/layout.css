@@ -107,6 +107,18 @@ header {
     gap: 15px;
 }
 
+footer {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
 /* Media Query for Small screens */
 @media screen and (max-width: 900px) {
     header  {
