@@ -18,6 +18,7 @@
 
 * {
     font-family: 'Inter', sans-serif;
+    font-size: 16px;
     line-height: 1.5;
     filter: saturate(120%);
 }
@@ -48,19 +49,12 @@ body {
 }
 
 .about-title {
-    font-size: 48px;
+    font-size: 42px;
     font-weight: 1000;
 }
 
-@media screen and (max-width: 800px) {
-    .about-title {
-        font-size: 36px;
-        text-align: center;
-    }
-}
-
 .about-sub {
-    font-size: 24px;
+    font-size: 20px;
     margin-top: -5px;
     color: rgb(148, 163, 184, 1);
 }
@@ -114,8 +108,8 @@ body {
 }
 
 .social-icon {
-    height: 24px;
-    width: 24px;
+    height: 32px;
+    width: 32px;
     border-radius: 999px;
 }
 
@@ -227,8 +221,15 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+    .about-title {
+        font-size: 32px;
+        text-align: center;
+    }
+    .about-details p {
+        font-size: 16px;
+    }
     .headshot {
-        margin-bottom: 20px;
+        margin-bottom: 35px;
     }
     .about-sub {
         font-size: 20px;

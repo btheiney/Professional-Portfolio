@@ -1,3 +1,4 @@
+/* image morph animation */
 @keyframes morph {
     0% {
         border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
@@ -10,7 +11,7 @@
     } 
   }
 
-  /* The typing effect */
+  /* The typing animation */
 @keyframes typing {
   from {
       width: 0
@@ -21,7 +22,7 @@
   }
 }
 
-/* The blinking cursor effect */
+/* The blinking cursor animation */
 @keyframes blink-caret {
 
   from,
