@@ -61,24 +61,21 @@ header {
 }
 
 .experience-cards {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
 
 .experience-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+    display: grid;
+    grid-auto-rows: .54fr;
     text-align: center;
 }
 
-.experience-image {
-    width: 140px;
-    height: 140px;
-    border-radius: 999px;
+.experience-inner {
+    display: grid;
+    grid-auto-rows: 20px;
+    text-align: center;
 }
 
 .project-item {
@@ -130,6 +127,14 @@ header {
         margin-left: 5%;
     }
     .about-details {
+        flex-direction: column;
+    }
+    .experience {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .experience-cards {
+        display: flex;
         flex-direction: column;
     }
     .projects {
