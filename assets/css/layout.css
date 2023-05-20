@@ -132,6 +132,10 @@ footer li {
         align-items: center;
         font-size: 14px;
     }
+    .nav-links li {
+        text-align: center;
+        margin: .5vh;
+    }
     .headshot {
         margin-bottom: 20px;
     }
@@ -167,6 +171,19 @@ footer li {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        word-wrap: break-word;
+        gap: 5px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    footer li {
+        text-align: center;
+        margin: .5vh;
     }
 }
 
