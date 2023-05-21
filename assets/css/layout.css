@@ -56,7 +56,7 @@ header {
     justify-content: center;
     margin-left: 20%;
     margin-right: 20%;
-    margin-bottom: 5%;
+    margin-bottom: 8%;
 }
 
 .experience-items {
@@ -89,7 +89,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 5%;
+    margin-bottom: 8%;
 }
 
 .project-item {
@@ -110,7 +110,7 @@ header {
     display: grid;
     grid-template-columns: .75fr 1.25fr;
     gap: 20px;
-    margin-bottom: 5%;
+    margin-bottom: 8%;
 }
 
 .contact-details {

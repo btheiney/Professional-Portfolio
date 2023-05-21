@@ -7,12 +7,12 @@ window.onload = function () {
 		.getElementById("contact-form")
 		.addEventListener("submit", function (event) {
 			event.preventDefault();
-			// generate a five digit number for the contact_number variable
 			this.contact_number.value = (Math.random() * 100000) | 0;
-			// these IDs from the previous steps
+
 			emailjs.sendForm("service_d0xaw97", "contact_form", this).then(
 				function () {
-					console.log("SUCCESS!");
+					var messageBox = document.getElementById('message-box');
+					messageBox.innerHTML = '<p class="contact-msg-box">Message sent! Thank You.</p>';
 				},
 				function (error) {
 					console.log("FAILED...", error);
