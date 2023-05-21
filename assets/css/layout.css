@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: #eee;
 }
 
 .container {
@@ -19,7 +18,7 @@ header {
 }
 
 .about {
-    margin-top: 8%;
+    margin-top: 5%;
     margin-left: 20%;
     margin-right: 20%;
     display: flex;
@@ -52,12 +51,12 @@ header {
 }
 
 .experience {
-    margin-top: 8%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
 }
 
 .experience-cards {
@@ -68,7 +67,7 @@ header {
 
 .experience-details {
     display: grid;
-    grid-auto-rows: .54fr;
+    grid-auto-rows: .5fr;
     text-align: center;
 }
 
@@ -85,9 +84,8 @@ header {
 }
 
 .projects {
-    margin-top: 8%;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 20%;
+    margin-right: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -104,6 +102,37 @@ header {
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+.contact {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 5%;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
 
 footer {
@@ -192,6 +221,11 @@ footer li {
         margin-right: 10%;
         margin-left: 10%;
     }
+    .experience {
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
     .projects {
         flex-direction: column;
         margin-left: 5%;
@@ -204,6 +238,11 @@ footer li {
     .about {
         margin-right: 20%;
         margin-left: 20%;
+    }
+    .experience {
+        flex-direction: column;
+        margin-left: 15%;
+        margin-right: 15%;
     }
     .projects {
         flex-direction: column;
@@ -218,6 +257,10 @@ footer li {
         margin-right: 25%;
         margin-left: 25%;
     }
+    .experience {
+        margin-right: 20%;
+        margin-left: 20%;
+    }
     .projects {
         flex-direction: column;
         margin-left: 20%;
@@ -231,9 +274,13 @@ footer li {
         margin-right: 30%;
         margin-left: 30%;
     }
+    .experience {
+        margin-right: 20%;
+        margin-left: 20%;
+    }
     .projects {
         flex-direction: column;
-        margin-left: 25%;
-        margin-right: 25%;
+        margin-left: 20%;
+        margin-right: 2%;
     }
 }
