@@ -59,9 +59,9 @@ header {
     margin-bottom: 5%;
 }
 
-.experience-cards {
+.experience-items {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
 
@@ -281,6 +281,6 @@ footer li {
     .projects {
         flex-direction: column;
         margin-left: 20%;
-        margin-right: 2%;
+        margin-right: 20%;
     }
 }

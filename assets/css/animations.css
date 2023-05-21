@@ -31,6 +31,6 @@
   }
 
   50% {
-      border-color: white;
+      border-color: var(--font-color);
   }
 }
