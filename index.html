@@ -11,6 +11,10 @@
 
     <title>Brett Heiney-Martin | Full-Stack Developer</title>
 
+    <!-- EmailJS (https://www.emailjs.com) -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="assets/js/email.js"></script>
+
     <!-- Layout CSS -->
     <link rel="stylesheet" href="assets/css/layout.css">
 
@@ -58,8 +62,8 @@
                         <p>I'm a <span class="highlighted">Full-Stack Software Developer</span> based out of Pennslyvania, United States. I have a strong passion for all things technology and creating awesome experiences through code. Take a look at my <a href="#projects"><span class="highlighted">Projects</span></a>, <a href="https://github.com/btheiney"><span class="highlighted">GitHub</span></a>, <a href=""><span class="highlighted">LinekdIn</span></a>, and <span class="highlighted">Resume.</span></p>
                         <ul class="about-socials">
                             <li><img class="social-icon" src="assets/images/github-logo.png" alt="GitHub Logo"></li>
-                            <li><img class="social-icon" src="assets/images/linkedin-logo.webp" alt="LinkedIn Logo"></li>
-                            <li><img class="social-icon" src="assets/images/pdf.png" alt="PDF Icon"></li>
+                            <li><img class="social-icon" src="assets/images/linkedin-logo.png" alt="LinkedIn Logo"></li>
+                            <li><img class="social-icon" src="assets/images/resume.png" alt="Resume Icon"></li>
                         </ul>
                     </div>
                 </div>
@@ -169,17 +173,19 @@
         <section id="contact-section">
             <div id="contact" class="contact">
                 <div class="contact-details">
-                    <h2 class="contact-title">Contact Me!</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis illo voluptatum quam aliquam veritatis similique, fuga quia eligendi neque blanditiis, totam, vero velit praesentium magni quas odit doloribus? Voluptatum, amet.</p>
+                    <h2 class="contact-title">Get in Touch!</h2>
+                    <p>I'd love to hear from you. Leave a message by completing this contact form and i'll get back to you as soon as possible.</p>
                 </div>
                 <div class="contact-form">
-                    <form>
+                    <form id="contact-form">
+                        <input type="hidden" name="contact_number">
                         <div class="form-group">
-                            <input class="input-box" type="text" name="full_name" id="full_name" placeholder="Full Name:">
-                            <input class="input-box" type="email" name="email" id="email" placeholder="Email Address:">
+                            <input class="input-box" type="text" name="full_name" id="full_name" placeholder="Full Name:" required="">
+                            <input class="input-box" type="email" name="email" id="email" placeholder="Email Address:" required="">
                         </div>
-                        <input class="input-box" type="text" name="subject" id="subject" placeholder="Subject:">
-                        <textarea class="input-box" name="message" id="message" rows="5" placeholder="Message: (Max Characters: 150)"></textarea>
+                        <input class="input-box" type="text" name="subject" id="subject" placeholder="Subject:" required="">
+                        <textarea class="input-box" name="message" id="message" rows="5" placeholder="Message: (Max Characters: 150)" required=""></textarea>
+                        <input type="submit" class="submit-btn" value="Send">
                     </form>
                 </div>
 
