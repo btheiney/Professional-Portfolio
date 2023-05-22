@@ -25,7 +25,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 8%;
+    margin-bottom: 5%;
 }
 
 .about-details {
@@ -50,18 +50,28 @@ header {
     margin-right: 30px;
 }
 
+.skills {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
 .experience {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 20%;
     margin-right: 20%;
-    margin-bottom: 8%;
+    margin-bottom: 5%;
 }
 
 .experience-items {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
 
@@ -89,7 +99,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 8%;
+    margin-bottom: 5%;
 }
 
 .project-item {
