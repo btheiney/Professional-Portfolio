@@ -45,27 +45,25 @@ header {
     margin-right: 30px;
 }
 
-.socials li {
+.social-buttons li {
     display: inline-block;
-    margin-right: 30px;
+    margin-right: 10px;
 }
 
 .about-lower {
     margin-left: 20%;
     margin-right: 20%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
     margin-bottom: 8%;
 }
 
-.skill-headings {
+.skill-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
+    gap: 50px;
 }
 
 .experience {
@@ -126,7 +124,7 @@ header {
     margin-left: 20%;
     margin-right: 20%;
     display: grid;
-    grid-template-columns: .75fr 1.25fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     margin-bottom: 8%;
 }
@@ -250,6 +248,16 @@ footer li {
         text-align: center;
         margin: .5vh;
     }
+    .about-lower {
+        margin-left: 5%;
+        margin-right: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+    .skill-container {
+        flex-direction: column;
+        gap: 15px;
+    }
 }
 
 /* Media Query for Medium screens */
@@ -273,6 +281,12 @@ footer li {
         margin-left: 5%;
         margin-right: 5%;
     }
+    .about-lower {
+        margin-left: 15%;
+        margin-right: 15%;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* Media Query for Large screens */
@@ -293,6 +307,10 @@ footer li {
     }
     .contact {
         flex-direction: column;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .about-lower {
         margin-left: 15%;
         margin-right: 15%;
     }
@@ -339,5 +357,4 @@ footer li {
         margin-left: 20%;
         margin-right: 20%;
     }
-    
 }
